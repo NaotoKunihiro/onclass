@@ -1,98 +1,286 @@
 @charset "utf-8";
 
 body {
+    color: #53514C;
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 header {
-    width: 100%;
-    height: 80px;
+    position: relative;
+    height: 60px;
 }
 
-.inner {
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: inherit;
-}
-
-.inner .logo img {
-    width: 250px;
-}
-
-.inner nav ul {
-    list-style: none;
-}
-
-.inner nav ul li {
+.logo {
     display: inline-block;
-    height: 35px;
-    padding: 0 20px;
-    border-radius: 2px;
-    line-height: 35px;
 }
 
-.inner nav ul li:hover {
-    background-color: #b99566;
+.logo img {
+    width: 100%;
 }
 
-.inner nav ul li a {
-    text-decoration: none;
-    color: #9c9b98;
+header .logo {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    width: 200px;
 }
 
-.inner nav ul li a:hover {
-    color: #fff
+header nav {
+    display: none;
 }
 
 #key_visual {
     width: 100%;
-    max-width: 1500px;
-    margin: 0 auto 30px;
 }
 
 #key_visual img {
     width: 100%;
+    vertical-align: bottom;
 }
 
-#information {
-    width: 1000px;
-    margin: 0 auto 50px;
+main {
+    width: 100%;
 }
 
-#information h2 {
-    background-color: #b99566;
-    color: #fff;
-    padding-left: 20px;
+main h2 {
     height: 40px;
+    padding-left: 15px;
+    background-color: #B99565;
+    color: #fff;
+    font-weight: normal;
     line-height: 40px;
 }
 
-#information ul {
-    list-style: none;
+main .countainer {
+    padding: 10px;
 }
 
 #information ul li {
-    padding: 5px 10px;
+    padding: 10px;
 }
 
 #information ul li:nth-child(even) {
-    background-color: #f5f3f0;
+    background-color: #F5F3EF;
 }
 
 #information ul li time {
-    display: inline-block;
-    margin: 5px 0;
-    padding-right: 10px;
+    display:  inline-block;
+    margin-bottom: 10px;
+    font-size: 12px;
 }
 
 #information ul li p {
-    display: inline-block;
+    font-size: 14px;
 }
 
 #information ul li p::before {
-    margin-right: 10px;
     content: "▶";
-    vertical-align: middle;
+    padding-right: 5px;
+}
+
+#gourmet article {
+    margin-bottom: 25px;
+}
+
+#gourmet article h3 {
+    font-size: 16px;
+}
+
+#gourmet article p {
+    font-size: 14px;
+    line-height: 2em;
+}
+
+#gourmet article p::before {
+    content: "-";
+    padding: 0 10px;
+}
+
+#gourmet article figure {
+    margin-bottom: 10px;
+}
+
+#gourmet article figure img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#gourmet .area li {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #B99565;
+    color: #fff;
+    font-size: 10px;
+}
+
+#gourmet .area li + li {
+    margin-left: 5px;
+}
+
+#gourmet .box_ttl {
+    padding: 5px 0 5px 10px;
+    border-left: 4px solid #412806;
+}
+
+#gourmet .box_ttl h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer ul {
+    padding: 30px 0;
+    background-color: #53514C;
+}
+
+footer ul li  {
+    width: 280px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+footer ul li + li {
+    margin-top: 5px;
+}
+
+footer ul li:hover {
+    background-color: #fff;
+}
+
+footer ul li:hover a {
+    color: #53514C;
+}
+
+footer ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .logo {
+    width: 160px;
+    margin: 15px 0 10px;
+}
+
+footer p small {
+    height: 30px;
+    font-size: 10px;
+    line-height: 30px;
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 80px;
+    }
+
+    header .logo {
+        top: 24px;
+        left: 25px;
+        width: 250px;
+    }
+
+    header nav {
+        display: block;
+        position: absolute;
+        top: 21px;
+        right: 0;
+    }
+
+    header nav ul {
+        padding-right: 20px;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        height: 35px;
+        border-radius: 2px;
+        font-size: 17px;
+        line-height: 35px;
+    }
+
+    header nav ul li:hover {
+        background-color: #B99565;
+    }
+
+    header nav ul li:hover a {
+        color: #fff;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 0 20px;
+        color: #9c9b98;
+        text-decoration: none;
+    }
+
+    #key_visual {
+        margin-bottom: 30px;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    main .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #information {
+        margin-bottom: 50px;
+    }
+
+    #information ul {
+        list-style: none;
+    }
+
+    #information ul li time {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    #information ul li p {
+        display: inline-block;
+    }
+
+    #information ul li p::before {
+        padding: 0 10px;
+    }
+
+    #gourmet {
+        margin-bottom: 55px;
+    }
+
+    #gourmet article {
+        width: calc(50% - 5px);
+        margin-bottom: 20px;
+    }
+
+    footer ul li {
+        display: inline-block;
+        width: 120px;
+        font-size: 17px;
+        transition: .3s;
+    }
+
+    footer ul li + li {
+        margin: 0;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    main .countainer {
+        padding: 10px 0;
+    }
 }
