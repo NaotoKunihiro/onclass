@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.content__sns__btn .is-line {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #00B900;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.content__sns__btn .is-instagram {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #CF2E92;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.content__sns__btn .is-facebook {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #71d0f2;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.content__sns__btn .is-twitter {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #1DA1F2;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*
+divタグ、buttonタグ、aタグが候補に挙がると思いますが、
+divタグは、キーボードでフォーカス可能な要素ではないためボタンとしては不適切だと思い使用しませんでした。
+buttonタグは、formなどのページ内アクションで使用するイメージがあるから使用しませんでした。
+aタグは、ページ外アクションで使用するイメージがあり、汎用性が高いためボタンとして頻繁に使われることが多いため、
+今回はaタグを使用しました。
+*//*# sourceMappingURL=style.css.map */

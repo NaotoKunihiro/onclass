@@ -1,0 +1,22 @@
+main {
+    .box1 {
+        background-color: #f00;
+        // 足し算
+        width: 100px + 200;
+        // 引き算
+        height: 500px - 200;
+    }
+    .box2 {
+        background-color: #0f0;
+        // 掛け算
+        width: 100px * 4;
+        // 割り算
+        height: (1000px / 5);
+    }
+    .box3 {
+        background-color: #00f;
+        // 掛け算
+        width: 1000px % 600;
+        height: 300px;
+    }
+}

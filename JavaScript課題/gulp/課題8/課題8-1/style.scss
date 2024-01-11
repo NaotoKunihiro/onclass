@@ -1,0 +1,18 @@
+// . ifの処理を@mixinの中で⾏い、対象のクラスの中で展開し、ifの条件で通ったCSSのプロパティーを反映させてください
+$bool: true;
+@mixin boxContent ($value: 200px) {
+    @if $bool {
+        width: $value + 100;
+        height: $value * 2;
+    }
+    @else {
+        width: $value;
+        height: $value;
+    }
+}
+main {
+    .box {
+        background-color: #f00;
+        @include boxContent(300px);
+    }
+}
