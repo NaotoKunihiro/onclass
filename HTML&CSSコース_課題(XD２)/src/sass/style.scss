@@ -1,0 +1,7 @@
+// ここにまとめる感じ？
+@use 'module/button'  as button;
+@use 'module/footer'  as footer;
+@use 'module/header'  as header;
+
+// ページ全体にかけるときはここに書く？
+a {text-decoration: none};
