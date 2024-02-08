@@ -1,0 +1,32 @@
+.news {
+    padding-top: 100px;
+}
+
+.news-list ul {
+    width: 60%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.news-block {
+    height: 80px;
+    border: 1px solid #a7a7a7;
+    margin-bottom: 20px;
+}
+
+.news-block p {
+    margin: 5px 0 10px 10px;
+}
+
+.news-block h2 {
+    margin-left: 10px;
+}
+
+.news-block a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-block a:hover {
+    text-decoration: underline;
+}
